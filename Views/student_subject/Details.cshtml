@@ -1,0 +1,48 @@
+@model PrivateLessons.Models.student_subject_registration
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>student_subject_registration</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.grade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.grade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.date)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.students)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.students.code)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.subject)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.subject.id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.teachers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.teachers.id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -186,3 +186,14 @@ C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\Login\Ed
 C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 C:\Users\Ahmed 3amer\PrivateLessons\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\Ahmed 3amer\PrivateLessons\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\Login\MyCourses.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\Login\CourseDetails.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\Login\Delete copy.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\Login\TeacherCourses.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\Login\EditCourse.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\student_subject\Create.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\student_subject\Delete.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\student_subject\Details.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\student_subject\Edit.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\student_subject\Index.cshtml.g.cs
+C:\Users\Ahmed 3amer\PrivateLessons\obj\Debug\netcoreapp3.1\Razor\Views\Login\CreateCourse.cshtml.g.cs

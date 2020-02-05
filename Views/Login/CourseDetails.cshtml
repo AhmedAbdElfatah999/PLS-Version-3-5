@@ -1,0 +1,56 @@
+@model List<System.String>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Subject</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+          Course Name:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model[0])
+        </dd>
+        <dt class = "col-sm-2">
+           Start Date:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model[1])
+        </dd>
+        <dt class = "col-sm-2">
+           Time:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model[2])
+        </dd>
+        <dt class = "col-sm-2">
+          Price:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model[3])
+        </dd>
+        <dt class = "col-sm-2">
+           The Place:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model[4])
+        </dd>
+         <dt class = "col-sm-2">
+           The Teacher:
+        </dt>
+        <dd class = "col-sm-10">
+            
+          @Html.DisplayFor(model => model[5])
+          @Html.DisplayFor(model => model[6])
+        </dd>
+    </dl>
+</div>
+<div>
+  
+    <a asp-action="Index">Back to List</a>
+</div>

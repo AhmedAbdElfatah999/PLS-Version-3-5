@@ -147,9 +147,15 @@ namespace PrivateLessons.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            
+            var subjectTeacher = await _context.subject_teachers.FirstOrDefaultAsync(entry=>entry.subject_id==id);
+            _context.subject_teachers.Remove(subjectTeacher);
+            await _context.SaveChangesAsync();
+            
             var subject = await _context.subject.FindAsync(id);
             _context.subject.Remove(subject);
             await _context.SaveChangesAsync();
+            
             return RedirectToAction(nameof(Index));
         }
 

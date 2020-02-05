@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Ahmed 3amer\\PrivateLessons\\PrivateLessons.csproj": {}
+    "C:\\Users\\Ahmed 3amer\\PrivateLessons\\PrivateLessons.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Ahmed 3amer\\PrivateLessons\\PrivateLessons.csproj": {
+    "C:\\Users\\Ahmed 3amer\\PrivateLessons\\PrivateLessons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\PrivateLessons.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmed 3amer\\PrivateLessons\\PrivateLessons.csproj",
         "projectName": "PrivateLessons",
-        "projectPath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\PrivateLessons.csproj",
+        "projectPath": "C:\\Users\\Ahmed 3amer\\PrivateLessons\\PrivateLessons.csproj",
         "packagesPath": "C:\\Users\\Ahmed 3amer\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\obj\\",
+        "outputPath": "C:\\Users\\Ahmed 3amer\\PrivateLessons\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

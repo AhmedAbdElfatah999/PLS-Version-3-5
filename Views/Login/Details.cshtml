@@ -1,4 +1,5 @@
-@model PrivateLessons.Models.users
+@model  IEnumerable<PrivateLessons.Models.users>;
+
 
 <!DOCTYPE html>
 
@@ -12,56 +13,44 @@
 <div>
     <h4>User</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.username)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(user => user.username)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.password)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.password)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.f_name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.f_name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.l_name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.l_name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.email)
-        </dd>
-        <dt class = "col-sm-2">
-          <h3>You are :</h3>
-        </dt>
-        <dd class = "col-sm-10">
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+              <b>  User Name: @Html.DisplayFor(modelItem => item.username)</b><br><br>
+            </td>
+            <td>
+              <b> EMail: @Html.DisplayFor(modelItem => item.email)</b><br><br>
+            </td>
+            <td>
+              <b> Full Name: @Html.DisplayFor(modelItem => item.f_name)
+                          @Html.DisplayFor(modelItem => item.l_name)</b><br><br>
+            </td>
+            <td>
+               <b>Password: @Html.DisplayFor(modelItem => item.password)</b><br><br>
+            </td>
+            <td>
+             <b>You are:</b>
+          @if(item.type_id==3){
+              <b>Student</b><br><br><br>
+               <a asp-action="MyCourses">My Registered Courses</a>
+          }else if(item.type_id==2){
+             <b>Teacher</b><br>
+               <a asp-action="TeacherCourses">My Courses</a>
+          }else{
+              <b>Admin</b><br>
+              
+          }
 
-            @if(Model.type_id==1){
-                 <h3>Admin</h3>
-            }else if(Model.type_id==2){
-                  <h3>Teacher</h3>
-            }else{
-                <h3>Student</h3>
-            }
-            
-        </dd>
-    </dl>
+          </td>
+           
+        </tr>
+}
+ 
 </div>
 <div>
    
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to List</a><br>
+   
 </div>
 </body>
 </html>

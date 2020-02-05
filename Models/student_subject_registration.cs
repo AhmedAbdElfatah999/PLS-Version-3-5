@@ -11,9 +11,10 @@ namespace PrivateLessons.Models
 {
     public partial class student_subject_registration{
             [Key]
-
+       public int id { get; set; }
        public int student_id { get; set; }
        public int subject_id { get; set; }
+       public int teacher_id { get; set; }
        public double grade { get; set; }
        [DataType(DataType.Date)]
        public System.DateTime date { get; set; }
@@ -23,6 +24,9 @@ namespace PrivateLessons.Models
 
        [ForeignKey(nameof(subject_id))]
        public subject subject { get; set; }
+
+        [ForeignKey(nameof(teacher_id))]
+       public teachers teachers { get; set; }
 
 
     }}

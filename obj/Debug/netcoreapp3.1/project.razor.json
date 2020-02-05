@@ -14440,7 +14440,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-        "Documentation": null,
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting elements containing attributes with URL expected values.\n            </summary>\n            <remarks>Resolves URLs starting with '~/' (relative to the application's 'webroot' setting) that are not\n            targeted by other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s. Runs prior to other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s to ensure\n            application-relative URLs are resolved.</remarks>\n        ",
         "TagOutputHint": null,
         "CaseSensitive": false,
         "TagMatchingRules": [
@@ -20501,8 +20501,18 @@
   "RootNamespace": "PrivateLessons",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Login\\CreateCourse.cshtml",
+      "TargetPath": "Views\\Login\\CreateCourse.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Teachers\\Delete.cshtml",
       "TargetPath": "Views\\Teachers\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\student_subject\\Details.cshtml",
+      "TargetPath": "Views\\student_subject\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20538,6 +20548,11 @@
     {
       "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\users\\Details.cshtml",
       "TargetPath": "Views\\users\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Login\\Delete copy.cshtml",
+      "TargetPath": "Views\\Login\\Delete copy.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20591,6 +20606,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Login\\MyCourses.cshtml",
+      "TargetPath": "Views\\Login\\MyCourses.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Login\\TeacherCourses.cshtml",
+      "TargetPath": "Views\\Login\\TeacherCourses.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Login\\Edit.cshtml",
       "TargetPath": "Views\\Login\\Edit.cshtml",
       "FileKind": "mvc"
@@ -20616,8 +20641,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Login\\EditCourse.cshtml",
+      "TargetPath": "Views\\Login\\EditCourse.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Subjects\\Delete.cshtml",
       "TargetPath": "Views\\Subjects\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Login\\CourseDetails.cshtml",
+      "TargetPath": "Views\\Login\\CourseDetails.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20631,8 +20666,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\student_subject\\Edit.cshtml",
+      "TargetPath": "Views\\student_subject\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\student_subject\\Create.cshtml",
+      "TargetPath": "Views\\student_subject\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\student_subject\\Delete.cshtml",
+      "TargetPath": "Views\\student_subject\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\Exams\\Details.cshtml",
       "TargetPath": "Views\\Exams\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ahmed 3amer\\PrivateLessons\\Views\\student_subject\\Index.cshtml",
+      "TargetPath": "Views\\student_subject\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

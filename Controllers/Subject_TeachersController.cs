@@ -138,7 +138,7 @@ namespace PrivateLessons.Controllers
             var subject_teachers = await _context.subject_teachers
                 .Include(s => s.subject)
                 .Include(s => s.teachers)
-                .FirstOrDefaultAsync(m => m.id == id);
+                .FirstOrDefaultAsync(m => m.teacher_id == id);
             if (subject_teachers == null)
             {
                 return NotFound();

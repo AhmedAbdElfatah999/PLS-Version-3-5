@@ -1,0 +1,84 @@
+@using Microsoft.EntityFrameworkCore.Query;
+@model IIncludableQueryable<PrivateLessons.Models.student_subject_registration,PrivateLessons.Models.subject>
+@using PrivateLessons.Models;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My Courses</title>
+</head>
+<body>
+
+<div>
+    <h4>Courses</h4>
+    <hr />
+    <table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>
+               Name
+            </th>
+            <th>
+               Date
+            </th>
+            <th>
+               Time
+            <th>
+               Price
+            </th>
+            <th>
+               Place
+            </th>
+            <th>
+                Grade
+            </th>
+             <th>
+               More Info.
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.subject.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subject.time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subject.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subject.place)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.grade)
+            </td>
+           <td>
+           
+                <a asp-action="CourseDetails" asp-route-id="@item.subject.id">Details</a>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+
+
+
+</div>
+<div>
+   
+    <a asp-action="Details">Back to My Page</a>
+</div>
+</body>
+</html>
